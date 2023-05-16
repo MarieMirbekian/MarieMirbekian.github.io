@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+  background-color: indianred;
+}
