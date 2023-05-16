@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  height: 0%;
+  height: 0;
   width:50%;
   background-color: red;
 }
