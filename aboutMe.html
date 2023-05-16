@@ -6,5 +6,20 @@
 <h1>About Me</h1>
 <p>This is a paragraph.</p>
 
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Hello</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+
 </body>
 </html>
