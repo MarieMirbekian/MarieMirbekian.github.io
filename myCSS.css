@@ -1,6 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .container {
+  padding: 10px;
+
   display: grid;
-  height: 50%;
-  width:50%;
-  background-color: yellow;
+  width: 51%;
+  background: Crimson;
+  margin: 40% auto;
+  gap: 4px;
+  grid-template-areas:
+    "first second"
+    "third  forth";
+  grid-template: 48% 48%/ 48% 48%;
+  border-radius: 5px;
+
+  text-align: center;
+  justify-content: center;
+}
+
+.container:after {
+  content: "";
+  display: grid;
+  padding-bottom: 100%;
+}
+
+.box {
+  display: flex;
+  box-shadow: 5px 5px 4px #a11d33;
+  background: #ED365B;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 3vw;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: #ff4d6d;
+  color: #800f2f;
+}
+
+.box:after {
+  content: "";
+  display: grid;
+  padding-bottom: 40%;
+}
+
+.first {
+
+  grid-area: "first";
+}
+
+.second {
+
+  grid-area: "second";
+}
+
+.third {
+  grid-area: "third";
+}
+
+.forth {
+  grid-area: "forth";
 }
